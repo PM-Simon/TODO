@@ -3,10 +3,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="design.css">
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -34,7 +35,7 @@
     <div id="main" class="container-fluid main">
       <div class="row-fluid">
         <div class="tabel-responsive">
-          <table class="table">
+          <table class="table  table-striped">
             <thead>
               <tr>
                 <th>Beschreibung</th>
@@ -47,23 +48,38 @@
               <tr>
                 <td>Beispiel 1</td>
                 <td>1 Januar 2019</td>
-                <td>0%</td>
-                <td><button type="button" name="Bearbeiten">Bearbeiten</button></td>
-                <td><button type="button" name="Löschen">Löschen</button></td>
+                <td>
+                  <div class="progress" style="width:150px">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:25%">25%</div>
+                  </div>
+                </td>
+                <td><a href="edit.html"><button class="btn btn-primary" type="button" name="Bearbeiten">Bearbeiten</button></a>
+                  <button class="btn btn-warning" type="button" name="Löschen">Löschen</button>
+                </td>
               </tr>
               <tr>
                 <td>Beispiel 2</td>
                 <td>2 Januar 2019</td>
-                <td>50%</td>
-                <td><button type="button" name="Bearbeiten">Bearbeiten</button></td>
-                <td><button type="button" name="Löschen">Löschen</button></td>>
+                <td>
+                  <div class="progress" style="width:150px">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:50%">50%</div>
+                  </div>
+                </td>
+                <td><a href="edit.html"><button class="btn btn-primary" type="button" name="Bearbeiten">Bearbeiten</button></a>
+                  <button class="btn btn-warning" type="button" name="Löschen">Löschen</button>
+                </td>
               </tr>
               <tr>
                 <td>Beispiel 3</td>
                 <td>3 Januar 2019</td>
-                <td>100%</td>
-                <td><button type="button" name="Bearbeiten">Bearbeiten</button></td>
-                <td><button type="button" name="Löschen">Löschen</button></td>
+                <td>
+                  <div class="progress" style="width:150px">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:100%">100%</div>
+                  </div>
+                </td>
+                <td><a href="edit.html"><button class="btn btn-primary" type="button" name="Bearbeiten">Bearbeiten</button></a>
+                  <button class="btn btn-warning" type="button" name="Löschen">Löschen</button>
+                </td>
               </tr>
             </tbody>
           </table>
