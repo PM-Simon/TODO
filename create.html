@@ -1,54 +1,53 @@
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="design.css">
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">TODO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Todo</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-        <li class="active"><a href="#">Erstellen</a></li>
-        <li><a href="impressum.html">Impressum</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="create.html">Erstellen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="impressum.html">Impressum<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main>
+    <br>
     <div id="main" class="container-fluid main">
-      <div class="row-fluid">
+      <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-6">
           <form class="" action="index.html" method="post">
             <textarea class="form-control" placeholder="Beschreiben Sie ihr TODO..." rows="8" cols="80"></textarea><br>
-            Deadline: <br><input type="date" name="deadline" value=""><br><br>
-            Fortschritt: <br><input type="number" name="" min="0" max="100"><br><br>
-            <a href="index.html"><button class="btn btn-primary" type="button" name="button">Speichern</button></a>
+            <div style="width:200px">
+              Deadline: <br><input class="form-control" type="date" name="deadline" value=""><br>
+              Fortschritt: <br><input class="form-control" type="number" name="" min="0" max="100"><br>
+              <a href="index.html"><button class="btn btn-primary" type="button" name="button">Speichern</button></a>
+            </div>
           </form>
         </div>
         <div class="col-md-2"></div>
       </div>
     </div>
   </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 <footer>
 </footer>
